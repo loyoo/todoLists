@@ -3,5 +3,6 @@ todoList.json = {};
 
 
 todoList.show = function (domId) {
-  $('#domId').showList(domId);
+  todoList.showList(domId);
+  todoList.showAdd(domId);
 };

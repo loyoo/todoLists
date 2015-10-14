@@ -28,27 +28,25 @@ html: todoList.html
 
 
 
-
 cj.js样例:
 
-todoList.saveData(json) = function(){
-  //把json保存到cookie
-};
-todoList.getData(domid) = function(){
-  //从cookie获取'todoList-domId'节点,再返回文本
-  return json;
-};
-
+        todoList.saveData(domId) = function(){
+          //把todoList.json保存到cookie,使用key为todoList-domId
+        };
+        todoList.getData(domId) = function(){
+          //从cookie获取'todoList-domId'节点,再返回文本
+          return json;
+        };
 
 dom:
 
 ul>(li>div.item>input.check[type=checkbox]+span.txt{item})*3
 
 json:
-{
-  ver:1,
-  createTime:1111,
-  data:[
-    {txt:'item1',state:0},{txt:'itemTxt',state:0}
-  ]
-}
+        {
+          ver:1,
+          createTime:1111,
+          data:[
+            {txt:'item1',state:0},{txt:'itemTxt',state:0}
+          ]
+        }
