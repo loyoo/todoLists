@@ -21,7 +21,7 @@ html: todoList.html
 * todoList.showAdd();  --x
 * todoList.addItem(itemTxt); : 显示新的li  --z
   * todoList.add(itemTxt) : true/false --s
-    * todoList.saveData(json) : json保存到cookie
+    * todoList.saveData(domId) : json保存到cookie
 * todoList.toggleState(id) : 切换完成状态 --z
   * todoList.toggle(id)  : save
     * todoList.saveData
