@@ -29,9 +29,15 @@ html: todoList.html
 
 
 
-js:
+cj.js样例:
 
-
+todoList.saveData(json) = function(){
+  //把json保存到cookie
+};
+todoList.getData(domid) = function(){
+  //从cookie获取'todoList-domId'节点,再返回文本
+  return json;
+};
 
 
 dom:
