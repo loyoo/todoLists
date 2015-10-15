@@ -1,6 +1,6 @@
-	var cookiename = 'cookieNametest';
+ï»¿	var cookiename = 'cookieNametest';
 	var cookiejson;
-	if ($.cookie(cookiename) == undefined) //cookie³õÊ¼»¯
+	if ($.cookie(cookiename) == undefined) //cookieåˆå§‹åŒ–--
 		cookiejson = jQuery.parseJSON('{"ver":"1", "createTime":"2015-10-14","data":[]}');
 	else
 		cookiejson = jQuery.parseJSON($.cookie(cookiename));
