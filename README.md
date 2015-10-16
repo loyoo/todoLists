@@ -21,28 +21,33 @@ html: todoList.html
 * todoList.showAdd();  --x
 * todoList.addItem(itemTxt); : 显示新的li  --z
   * todoList.add(itemTxt) : true/false --s
-    * todoList.saveData(json) : json保存到cookie
+    * todoList.saveData(domId) : json保存到cookie
 * todoList.toggleState(id) : 切换完成状态 --z
   * todoList.toggle(id)  : save
     * todoList.saveData
 
 
 
+cj.js样例:
 
-js:
-
-
-
+        todoList.saveData(domId) = function(){
+          //把todoList.json保存到cookie,使用key为todoList-domId
+        };
+        todoList.getData(domId) = function(){
+          //从cookie获取'todoList-domId'节点,再返回文本
+          return json;
+        };
 
 dom:
 
 ul>(li>div.item>input.check[type=checkbox]+span.txt{item})*3
 
 json:
-{
-  ver:1,
-  createTime:1111,
-  data:[
-    {txt:'item1',state:0},{txt:'itemTxt',state:0}
-  ]
-}
+
+        {
+          ver:1,
+          createTime:1111,
+          data:[
+            {txt:'item1',state:0},{txt:'itemTxt',state:0}
+          ]
+        }
